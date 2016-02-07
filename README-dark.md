@@ -1,5 +1,5 @@
 ```bash
-npm i
+yes '' | npm i
 git reset --hard
 git update-index --skip-worktree dist/components/*
 git update-index --skip-worktree dist/semantic.*
