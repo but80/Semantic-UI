@@ -270,7 +270,7 @@
 @strongTransparentBlack     : rgba(0, 0, 0, 0.10);
 @veryStrongTransparentBlack : rgba(0, 0, 0, 0.15);
 
-@subtleTransparentWhite     : rgba(255, 255, 255, 0.02);
+@subtleTransparentWhite     : rgba(255, 255, 255, 0.03);
 @transparentWhite           : rgba(255, 255, 255, 0.08);
 @strongTransparentWhite     : rgba(255, 255, 255, 0.15);
 
@@ -283,7 +283,7 @@
 
 /* Differentiating Layers */
 @subtleShadow:
-  0px 1px 2px 0 @borderColor
+  0px 1px 2px 0 rgba(0, 0, 0, 0.12);
 ;
 @floatingShadow:
   0px 2px 4px 0px rgba(34, 36, 38, 0.12),

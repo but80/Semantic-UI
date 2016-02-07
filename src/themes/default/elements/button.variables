@@ -9,7 +9,7 @@
 /* Button */
 @verticalMargin: 0em;
 @horizontalMargin: 0.25em;
-@backgroundColor: #E0E1E2;
+@backgroundColor: #555657;
 @backgroundImage: none;
 @background: @backgroundColor @backgroundImage;
 @lineHeight: 1em;
@@ -23,7 +23,7 @@
 @tapColor: transparent;
 @fontFamily: @pageFont;
 @fontWeight: bold;
-@textColor: rgba(0, 0, 0, 0.6);
+@textColor: rgba(255, 255, 255, 0.8);
 @textShadow: none;
 @invertedTextShadow: @textShadow;
 @borderRadius: @defaultBorderRadius;
@@ -84,7 +84,7 @@
 --------------------*/
 
 /* Hovered */
-@hoverBackgroundColor: #CACBCD;
+@hoverBackgroundColor: #656667;
 @hoverBackgroundImage: @backgroundImage;
 @hoverBoxShadow: @boxShadow;
 @hoverColor: @hoveredTextColor;
@@ -98,7 +98,7 @@
 @iconFocusOpacity: 0.85;
 
 /* Pressed Down */
-@downBackgroundColor: #BABBBC;
+@downBackgroundColor: #757677;
 @downBackgroundImage: '';
 @downPressedShadow: none;
 @downBoxShadow:
@@ -146,7 +146,7 @@
 @orVerticalOffset: -(@orCircleSize / 2);
 @orHorizontalOffset: -(@orCircleSize / 2);
 
-@orBackgroundColor: @white;
+@orBackgroundColor: @pageBackground;
 @orTextShadow: @invertedTextShadow;
 @orTextStyle: normal;
 @orTextWeight: bold;
@@ -171,7 +171,7 @@
 
 /* Labeled Icon */
 @labeledIconWidth: 1em + (@verticalPadding * 2);
-@labeledIconBackgroundColor: rgba(0, 0, 0, 0.05);
+@labeledIconBackgroundColor: rgba(0, 0, 0, 0.15);
 @labeledIconPadding: (@horizontalPadding + @labeledIconWidth);
 @labeledIconBorder: transparent;
 @labeledIconColor: '';
@@ -182,7 +182,7 @@
 
 /* Inverted */
 @invertedBorderSize: 2px;
-@invertedTextColor: @white;
+@invertedTextColor: @black;
 @invertedTextHoverColor: @hoverColor;
 @invertedGroupButtonOffset: 0px 0px 0px -(@invertedBorderSize);
 @invertedVerticalGroupButtonOffset: 0px 0px -(@invertedBorderSize) 0px;
@@ -201,20 +201,20 @@
 @basicTextTransform: none;
 
 /* Basic Hover */
-@basicHoverBackground: #FFFFFF;
+@basicHoverBackground: @basicBackground;
 @basicHoverTextColor: @hoveredTextColor;
-@basicHoverBoxShadow: $basicBoxShadow;
+@basicHoverBoxShadow: @basicBoxShadow;
 /* Basic Focus */
-@basicFocusBackground: @basicHoverBackground;
+@basicFocusBackground: @veryStrongTransparentBlack;
 @basicFocusTextColor: @basicHoverTextColor;
 @basicFocusBoxShadow: @basicBoxShadow;
 
 /* Basic Down */
-@basicDownBackground: #F8F8F8;
+@basicDownBackground: @black;
 @basicDownTextColor: @pressedTextColor;
 @basicDownBoxShadow: @basicBoxShadow;
 /* Basic Active */
-@basicActiveBackground: @transparentBlack;
+@basicActiveBackground: @basicHoverBackground;
 @basicActiveBoxShadow: @basicBoxShadow;
 @basicActiveTextColor: @selectedTextColor;
 
@@ -224,11 +224,11 @@
 @basicInvertedDownBackground: @transparentWhite;
 @basicInvertedActiveBackground: @transparentWhite;
 
-@basicInvertedBoxShadow: 0px 0px 0px @invertedBorderSize rgba(255, 255, 255, 0.5) inset;
-@basicInvertedHoverBoxShadow: 0px 0px 0px @invertedBorderSize rgba(255, 255, 255, 1) inset;
-@basicInvertedFocusBoxShadow: 0px 0px 0px @invertedBorderSize rgba(255, 255, 255, 1) inset;
-@basicInvertedDownBoxShadow: 0px 0px 0px @invertedBorderSize rgba(255, 255, 255, 0.9) inset;
-@basicInvertedActiveBoxShadow: 0px 0px 0px @invertedBorderSize rgba(255, 255, 255, 0.7) inset;
+@basicInvertedBoxShadow: 0px 0px 0px @invertedBorderSize rgba(0, 0, 0, 0.5) inset;
+@basicInvertedHoverBoxShadow: 0px 0px 0px @invertedBorderSize rgba(0, 0, 0, 1) inset;
+@basicInvertedFocusBoxShadow: 0px 0px 0px @invertedBorderSize rgba(0, 0, 0, 1) inset;
+@basicInvertedDownBoxShadow: 0px 0px 0px @invertedBorderSize rgba(0, 0, 0, 0.9) inset;
+@basicInvertedActiveBoxShadow: 0px 0px 0px @invertedBorderSize rgba(0, 0, 0, 0.7) inset;
 
 @basicInvertedColor: @darkWhite;
 @basicInvertedHoverColor: @darkWhiteHover;
@@ -249,51 +249,51 @@
 @coloredBoxShadow: @shadowBoxShadow;
 
 /* Colored */
-@brownTextColor: @invertedTextColor;
+@brownTextColor: @white;
 @brownTextShadow: @invertedTextShadow;
-@redTextColor: @invertedTextColor;
+@redTextColor: @white;
 @redTextShadow: @invertedTextShadow;
-@orangeTextColor: @invertedTextColor;
+@orangeTextColor: @white;
 @orangeTextShadow: @invertedTextShadow;
-@greenTextColor: @invertedTextColor;
+@greenTextColor: @white;
 @greenTextShadow: @invertedTextShadow;
-@blueTextColor: @invertedTextColor;
+@blueTextColor: @white;
 @blueTextShadow: @invertedTextShadow;
-@violetTextColor: @invertedTextColor;
+@violetTextColor: @white;
 @violetTextShadow: @invertedTextShadow;
-@purpleTextColor: @invertedTextColor;
+@purpleTextColor: @white;
 @purpleTextShadow: @invertedTextShadow;
-@pinkTextColor: @invertedTextColor;
+@pinkTextColor: @white;
 @pinkTextShadow: @invertedTextShadow;
-@blackTextColor: @invertedTextColor;
+@blackTextColor: @white;
 @blackTextShadow: @invertedTextShadow;
-@oliveTextColor: @invertedTextColor;
+@oliveTextColor: @white;
 @oliveTextShadow: @invertedTextShadow;
-@yellowTextColor: @invertedTextColor;
+@yellowTextColor: @white;
 @yellowTextShadow: @invertedTextShadow;
-@tealTextColor: @invertedTextColor;
+@tealTextColor: @white;
 @tealTextShadow: @invertedTextShadow;
-@greyTextColor: @invertedTextColor;
+@greyTextColor: @white;
 @greyTextShadow: @invertedTextShadow;
 
 /* Inverted */
-@lightBrownTextColor: @invertedTextColor;
+@lightBrownTextColor: @white;
 @lightBrownTextShadow: @invertedTextShadow;
-@lightRedTextColor: @invertedTextColor;
+@lightRedTextColor: @white;
 @lightRedTextShadow: @invertedTextShadow;
-@lightOrangeTextColor: @invertedTextColor;
+@lightOrangeTextColor: @white;
 @lightOrangeTextShadow: @invertedTextShadow;
-@lightGreenTextColor: @invertedTextColor;
+@lightGreenTextColor: @white;
 @lightGreenTextShadow: @invertedTextShadow;
-@lightBlueTextColor: @invertedTextColor;
+@lightBlueTextColor: @white;
 @lightBlueTextShadow: @invertedTextShadow;
-@lightVioletTextColor: @invertedTextColor;
+@lightVioletTextColor: @white;
 @lightVioletTextShadow: @invertedTextShadow;
-@lightPurpleTextColor: @invertedTextColor;
+@lightPurpleTextColor: @white;
 @lightPurpleTextShadow: @invertedTextShadow;
-@lightPinkTextColor: @invertedTextColor;
+@lightPinkTextColor: @white;
 @lightPinkTextShadow: @invertedTextShadow;
-@lightBlackTextColor: @invertedTextColor;
+@lightBlackTextColor: @white;
 @lightBlackTextShadow: @invertedTextShadow;
 @lightOliveTextColor: @textColor;
 @lightOliveTextShadow: @textShadow;
@@ -307,7 +307,7 @@
 
 /* Ordinality */
 @primaryBackgroundImage: @coloredBackgroundImage;
-@primaryTextColor: @invertedTextColor;
+@primaryTextColor: @white;
 @primaryTextShadow: @invertedTextShadow;
 @primaryBoxShadow: @coloredBoxShadow;
 
