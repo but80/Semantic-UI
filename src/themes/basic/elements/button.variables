@@ -9,7 +9,7 @@
 
 @primaryColor: #333333;
 
-@borderRadius: 0.25em;
+@borderRadius: 0em;
 
 @backgroundColor: #EEEEEE;
 @backgroundImage: none;

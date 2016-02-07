@@ -5,7 +5,7 @@ $(document)
         $(this)
           .popup({
             on        : 'hover',
-            variation : 'small inverted',
+            variation : 'small',
             exclusive : true,
             content   : $(this).attr('class')
           })

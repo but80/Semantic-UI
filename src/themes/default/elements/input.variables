@@ -18,7 +18,7 @@
 @textAlign: left;
 @background: @inputBackground;
 @borderWidth: 1px;
-@border: @borderWidth solid @borderColor;
+@border: @borderWidth solid @solidBorderColor;
 @boxShadow: none;
 
 @borderRadius: @defaultBorderRadius;
@@ -91,7 +91,7 @@
 @placeholderErrorFocusColor: lighten(@errorColor, 30);
 
 /* Loader */
-@invertedLoaderFillColor: rgba(0, 0, 0, 0.15);
+@invertedLoaderFillColor: rgba(255, 255, 255, 0.15);
 
 /*-------------------
       Variations
@@ -99,5 +99,5 @@
 
 /* Inverted */
 @transparentInvertedPlaceholderColor: @invertedUnselectedTextColor;
-@transparentInvertedColor: @white;
+@transparentInvertedColor: @black;
 

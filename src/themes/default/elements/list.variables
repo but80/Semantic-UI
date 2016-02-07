@@ -56,7 +56,7 @@
 @itemHeaderColor: @textColor;
 
 /* Description */
-@itemDescriptionColor: rgba(0, 0, 0, 0.7);
+@itemDescriptionColor: rgba(255, 255, 255, 0.7);
 
 /* Link */
 @itemLinkColor: @linkColor;
@@ -116,7 +116,7 @@
 
 /* Selection List */
 @selectionListItemMargin: 0em;
-@selectionListItemBorderRadius: 0.5em;
+@selectionListItemBorderRadius: 0em;
 @selectionListItemVerticalPadding: 0.5em;
 @selectionListItemHorizontalPadding: 0.5em;
 @selectionListTransition:

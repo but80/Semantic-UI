@@ -16,7 +16,7 @@
   background @defaultDuration @defaultEasing,
   color @defaultDuration @defaultEasing
 ;
-@background: @white;
+@background: #333333;
 @color: @textColor;
 @borderWidth: 1px;
 @border: @borderWidth solid @borderColor;
@@ -40,7 +40,7 @@
 /* Table Header */
 @headerBorder: 1px solid @internalBorderColor;
 @headerDivider: none;
-@headerBackground: @offWhite;
+@headerBackground: lighten(@background, 5);
 @headerAlign: inherit;
 @headerVerticalAlign: inherit;
 @headerColor: @textColor;
@@ -55,7 +55,7 @@
 @footerBoxShadow: none;
 @footerBorder: 1px solid @borderColor;
 @footerDivider: none;
-@footerBackground: @offWhite;
+@footerBackground: @black;
 @footerAlign: inherit;
 @footerVerticalAlign: middle;
 @footerColor: @textColor;
@@ -79,7 +79,7 @@
 --------------------*/
 
 /* Definition */
-@definitionPageBackground: @white;
+@definitionPageBackground: @background;
 
 @definitionHeaderBackground: transparent;
 @definitionHeaderColor: @unselectedTextColor;
@@ -109,33 +109,33 @@
 /* Positive */
 @positiveColor: @positiveTextColor;
 @positiveBoxShadow: @stateMarkerWidth 0px 0px @positiveBorderColor inset;
-@positiveBackgroundHover: darken(@positiveBackgroundColor, 3);
-@positiveColorHover: darken(@positiveColor, 3);
+@positiveBackgroundHover: lighten(@positiveBackgroundColor, 3);
+@positiveColorHover: lighten(@positiveColor, 3);
 
 /* Negative */
 @negativeColor: @negativeTextColor;
 @negativeBoxShadow: @stateMarkerWidth 0px 0px @negativeBorderColor inset;
-@negativeBackgroundHover: darken(@negativeBackgroundColor, 3);
-@negativeColorHover: darken(@negativeColor, 3);
+@negativeBackgroundHover: lighten(@negativeBackgroundColor, 3);
+@negativeColorHover: lighten(@negativeColor, 3);
 
 /* Error */
 @errorColor: @errorTextColor;
 @errorBoxShadow: @stateMarkerWidth 0px 0px @errorBorderColor inset;
-@errorBackgroundHover: darken(@errorBackgroundColor, 3);
-@errorColorHover: darken(@errorColor, 3);
+@errorBackgroundHover: lighten(@errorBackgroundColor, 3);
+@errorColorHover: lighten(@errorColor, 3);
 
 /* Warning */
 @warningColor: @warningTextColor;
 @warningBoxShadow: @stateMarkerWidth 0px 0px @warningBorderColor inset;
-@warningBackgroundHover: darken(@warningBackgroundColor, 3);
-@warningColorHover: darken(@warningColor, 3);
+@warningBackgroundHover: lighten(@warningBackgroundColor, 3);
+@warningColorHover: lighten(@warningColor, 3);
 
 /* Active */
 @activeColor: @textColor;
-@activeBackgroundColor: #E0E0E0;
+@activeBackgroundColor: #202020;
 @activeBoxShadow: @stateMarkerWidth 0px 0px @activeColor inset;
 
-@activeBackgroundHover: #EFEFEF;
+@activeBackgroundHover: #101010;
 @activeColorHover: @selectedTextColor;
 
 /*--------------
@@ -155,7 +155,7 @@
 ;
 
 /* Striped */
-@stripedBackground: rgba(0, 0, 50, 0.02);
+@stripedBackground: rgba(0, 0, 0, 0.1);
 @invertedStripedBackground: rgba(255, 255, 255, 0.05);
 
 /* Selectable */
@@ -197,7 +197,7 @@
 @coloredBorderRadius: 0em 0em @borderRadius @borderRadius;
 
 /* Inverted */
-@invertedBackground: #333333;
+@invertedBackground: #CCCCCC;
 @invertedBorder: none;
 @invertedCellBorderColor: @whiteBorderColor;
 @invertedCellColor: @invertedTextColor;
@@ -218,7 +218,7 @@
 @basicTableHeaderBackground: transparent;
 @basicTableCellBackground: transparent;
 @basicTableHeaderDivider: none;
-@basicTableCellBorder: 1px solid rgba(0, 0, 0, 0.1);
+@basicTableCellBorder: 1px solid rgba(255, 255, 255, 0.1);
 @basicTableCellPadding: '';
 @basicTableStripedBackground: @transparentBlack;
 

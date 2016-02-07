@@ -13,7 +13,7 @@
 /* Checkbox */
 @checkboxBackground: @white;
 @checkboxBorder: 1px solid @solidBorderColor;
-@checkboxBorderRadius: @3px;
+@checkboxBorderRadius: 0px;
 @checkboxTransition:
   border @defaultDuration @defaultEasing,
   opacity @defaultDuration @defaultEasing,

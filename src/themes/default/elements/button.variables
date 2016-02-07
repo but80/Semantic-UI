@@ -203,25 +203,19 @@
 /* Basic Hover */
 @basicHoverBackground: #FFFFFF;
 @basicHoverTextColor: @hoveredTextColor;
-@basicHoverBoxShadow:
-  0px 0px 0px @basicBorderSize @selectedBorderColor inset,
-  0px 0px 0px 0px @borderColor inset
-;
+@basicHoverBoxShadow: $basicBoxShadow;
 /* Basic Focus */
 @basicFocusBackground: @basicHoverBackground;
 @basicFocusTextColor: @basicHoverTextColor;
-@basicFocusBoxShadow: @basicHoverBoxShadow;
+@basicFocusBoxShadow: @basicBoxShadow;
 
 /* Basic Down */
 @basicDownBackground: #F8F8F8;
 @basicDownTextColor: @pressedTextColor;
-@basicDownBoxShadow:
-  0px 0px 0px @basicBorderSize rgba(0, 0, 0, 0.15) inset,
-  0px 1px 4px 0px @borderColor inset
-;
+@basicDownBoxShadow: @basicBoxShadow;
 /* Basic Active */
 @basicActiveBackground: @transparentBlack;
-@basicActiveBoxShadow: '';
+@basicActiveBoxShadow: @basicBoxShadow;
 @basicActiveTextColor: @selectedTextColor;
 
 /* Basic Inverted */
@@ -243,7 +237,7 @@
 
 
 /* Basic Group */
-@basicGroupBorder: @basicBorderSize solid @borderColor;
+@basicGroupBorder: @basicBorderSize solid @strongBorderColor;
 @basicGroupBoxShadow: none;
 
 /*-------------------

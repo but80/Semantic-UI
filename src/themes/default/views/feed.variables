@@ -68,7 +68,7 @@
 @summaryImageHeight: 10em;
 @summaryImageMargin: -0.25em 0.25em 0em 0em;
 @summaryImageVerticalAlign: middle;
-@summaryImageBorderRadius: 0.25em;
+@summaryImageBorderRadius: 0em;
 
 /* Summary Date */
 @summaryDateDisplay: inline-block;

@@ -7,11 +7,11 @@
 --------------------*/
 
 @zIndex: 1900;
-@background: @white;
+@background: @infoColor;
 
 @maxWidth: 250px;
-@borderColor: @solidBorderColor;
-@borderWidth: 1px;
+@borderColor: @infoColor;
+@borderWidth: 0px;
 @boxShadow: @floatingShadow;
 @color: @textColor;
 
@@ -19,7 +19,7 @@
 @horizontalPadding: 1em;
 @fontWeight: normal;
 @fontStyle: normal;
-@borderRadius: @defaultBorderRadius;
+@borderRadius: 0.30769em;
 
 /*-------------------
        Parts
@@ -43,13 +43,13 @@
 @border: @borderWidth solid @borderColor;
 
 /* Arrow */
-@arrowBackground: @white;
+@arrowBackground: @background;
 @arrowZIndex: 2;
 @arrowJitter: 0.05em;
 @arrowOffset: -(@arrowSize / 2) + @arrowJitter;
 
 @arrowStroke: @borderWidth;
-@arrowColor: darken(@borderColor, 10);
+@arrowColor: @borderColor;
 
 /* Arrow color by position */
 @arrowTopBackground: @arrowBackground;
@@ -84,10 +84,10 @@
 @veryWideWidth: 550px;
 
 /* Inverted */
-@invertedBackground: @black;
-@invertedColor: @white;
+@invertedBackground: @fullBlack;
+@invertedColor: @textColor;
 @invertedBorder: none;
-@invertedBoxShadow: none;
+@invertedBoxShadow: @floatingShadow;
 
 @invertedHeaderBackground: none;
 @invertedHeaderColor: @white;

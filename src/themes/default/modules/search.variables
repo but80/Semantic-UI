@@ -43,7 +43,7 @@
 @resultImageBackground: none;
 @resultImageWidth: 5em;
 @resultImageHeight: 3em;
-@resultImageBorderRadius: 0.25em;
+@resultImageBorderRadius: 0em;
 @resultImageMargin: 0em 6em 0em 0em;
 
 /* Result Content */

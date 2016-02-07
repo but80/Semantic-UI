@@ -38,8 +38,8 @@
 /* See Power-user section below
    for explanation of @px variables
 */
-@relativeBorderRadius: @relative4px;
-@absoluteBorderRadius: @4px;
+@relativeBorderRadius: 0px; /* @relative4px; */
+@absoluteBorderRadius: 0px;
 
 @defaultBorderRadius: @absoluteBorderRadius;
 
@@ -47,11 +47,11 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
-@secondaryColor      : @black;
+@primaryColor        : @teal;
+@secondaryColor      : @offWhite;
 
-@lightPrimaryColor   : @lightBlue;
-@lightSecondaryColor : @lightBlack;
+@lightPrimaryColor   : @lightTeal;
+@lightSecondaryColor : @white;
 
 /*--------------
   Page Heading
@@ -71,7 +71,7 @@
 ---------------*/
 
 /* This adjusts the default form input across all elements */
-@inputBackground        : @white;
+@inputBackground        : @fullBlack;
 @inputVerticalPadding   : @relative11px;
 @inputHorizontalPadding : @relative14px;
 @inputPadding           : @inputVerticalPadding @inputHorizontalPadding;
@@ -84,10 +84,10 @@
 --------------------*/
 
 /* Used on inputs, textarea etc */
-@focusedFormBorderColor: #85B7D9;
+@focusedFormBorderColor: spin(#FFFFFF - #85B7D9, 180);
 
 /* Used on dropdowns, other larger blocks */
-@focusedFormMutedBorderColor: #96C8DA;
+@focusedFormMutedBorderColor: spin(#FFFFFF - #96C8DA, 180);
 
 /*-------------------
         Sizes
@@ -112,11 +112,11 @@
         Page
 --------------------*/
 
-@pageBackground      : #FFFFFF;
+@pageBackground      : #333333;
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
-@textColor           : rgba(0, 0, 0, 0.87);
+@textColor           : rgba(255, 255, 255, 0.87);
 
 /*-------------------
       Paragraph
@@ -222,44 +222,44 @@
 @midWhite         : #DCDDDE;
 @white            : #FFFFFF;
 
+/*--- Colored Text ---*/
+@redTextColor    : @lightRed;
+@orangeTextColor : @lightOrange;
+@yellowTextColor : @lightYellow;
+@oliveTextColor  : @lightOlive;
+@greenTextColor  : @lightGreen;
+@tealTextColor   : @lightTeal;
+@blueTextColor   : @lightBlue;
+@violetTextColor : @lightViolet;
+@purpleTextColor : @lightPurple;
+@pinkTextColor   : @lightPink;
+@brownTextColor  : @lightBrown;
+
 /*--- Colored Backgrounds ---*/
-@redBackground    : #FFE8E6;
-@orangeBackground : #FFEDDE;
-@yellowBackground : #FFF8DB;
-@oliveBackground  : #FBFDEF;
-@greenBackground  : #E5F9E7;
-@tealBackground   : #E1F7F7;
-@blueBackground   : #DFF0FF;
-@violetBackground : #EAE7FF;
-@purpleBackground : #F6E7FF;
-@pinkBackground   : #FFE3FB;
-@brownBackground  : #F1E2D3;
+@redBackground    : mix(@black, @red, 90);
+@orangeBackground : mix(@black, @orange, 90);
+@yellowBackground : mix(@black, @yellow, 90);
+@oliveBackground  : mix(@black, @olive, 90);
+@greenBackground  : mix(@black, @green, 90);
+@tealBackground   : mix(@black, @teal, 90);
+@blueBackground   : mix(@black, @blue, 90);
+@violetBackground : mix(@black, @violet, 90);
+@purpleBackground : mix(@black, @purple, 90);
+@pinkBackground   : mix(@black, @pink, 90);
+@brownBackground  : mix(@black, @brown, 90);
 
 /*--- Colored Headers ---*/
-@redHeaderColor    : darken(@redTextColor, 5);
-@oliveHeaderColor  : darken(@oliveTextColor, 5);
-@greenHeaderColor  : darken(@greenTextColor, 5);
-@yellowHeaderColor : darken(@yellowTextColor, 5);
-@blueHeaderColor   : darken(@blueTextColor, 5);
-@tealHeaderColor   : darken(@tealTextColor, 5);
-@pinkHeaderColor   : darken(@pinkTextColor, 5);
-@violetHeaderColor : darken(@violetTextColor, 5);
-@purpleHeaderColor : darken(@purpleTextColor, 5);
-@orangeHeaderColor : darken(@orangeTextColor, 5);
-@brownHeaderColor  : darken(@brownTextColor, 5);
-
-/*--- Colored Text ---*/
-@redTextColor    : @red;
-@orangeTextColor : @orange;
-@yellowTextColor : #B58105; // Yellow text is difficult to read
-@oliveTextColor  : #8ABC1E; // Olive is difficult to read
-@greenTextColor  : #1EBC30; // Green is difficult to read
-@tealTextColor   : #10A3A3; // Teal text is difficult to read
-@blueTextColor   : @blue;
-@violetTextColor : @violet;
-@purpleTextColor : @purple;
-@pinkTextColor   : @pink;
-@brownTextColor  : @brown;
+@redHeaderColor    : lighten(@redTextColor, 5);
+@oliveHeaderColor  : lighten(@oliveTextColor, 5);
+@greenHeaderColor  : lighten(@greenTextColor, 5);
+@yellowHeaderColor : lighten(@yellowTextColor, 5);
+@blueHeaderColor   : lighten(@blueTextColor, 5);
+@tealHeaderColor   : lighten(@tealTextColor, 5);
+@pinkHeaderColor   : lighten(@pinkTextColor, 5);
+@violetHeaderColor : lighten(@violetTextColor, 5);
+@purpleHeaderColor : lighten(@purpleTextColor, 5);
+@orangeHeaderColor : lighten(@orangeTextColor, 5);
+@brownHeaderColor  : lighten(@brownTextColor, 5);
 
 /*-------------------
      Alpha Colors
@@ -301,31 +301,31 @@
 
 /* Positive */
 @positiveColor           : @green;
-@positiveBackgroundColor : #FCFFF5;
-@positiveBorderColor     : #A3C293;
-@positiveHeaderColor     : #1A531B;
-@positiveTextColor       : #2C662D;
+@positiveBackgroundColor : @greenBackground;
+@positiveBorderColor     : @greenBackground;
+@positiveHeaderColor     : @greenHeaderColor;
+@positiveTextColor       : @greenTextColor;
 
 /* Negative */
 @negativeColor           : @red;
-@negativeBackgroundColor : #FFF6F6;
-@negativeBorderColor     : #E0B4B4;
-@negativeHeaderColor     : #912D2B;
-@negativeTextColor       : #9F3A38;
+@negativeBackgroundColor : @redBackground;
+@negativeBorderColor     : @redBackground;
+@negativeHeaderColor     : @redHeaderColor;
+@negativeTextColor       : @redTextColor;
 
 /* Info */
-@infoColor              : #31CCEC;
-@infoBackgroundColor    : #F8FFFF;
-@infoBorderColor        : #A9D5DE;
-@infoHeaderColor        : #0E566C;
-@infoTextColor          : #276F86;
+@infoColor              : @blue;
+@infoBackgroundColor    : @blueBackground;
+@infoBorderColor        : @blueBackground;
+@infoHeaderColor        : @blueHeaderColor;
+@infoTextColor          : @blueTextColor;
 
 /* Warning */
-@warningColor           : #F2C037;
-@warningBorderColor     : #C9BA9B;
-@warningBackgroundColor : #FFFAF3;
-@warningHeaderColor     : #794B02;
-@warningTextColor       : #573A08;
+@warningColor           : @yellow;
+@warningBorderColor     : @yellowBackground;
+@warningBackgroundColor : @yellowBackground;
+@warningHeaderColor     : @yellowHeaderColor;
+@warningTextColor       : @yellowTextColor;
 
 /*-------------------
         Paths
@@ -427,24 +427,24 @@
      Neutral Text
 --------------------*/
 
-@darkTextColor               : rgba(0, 0, 0, 0.85);
-@mutedTextColor              : rgba(0, 0, 0, 0.6);
-@lightTextColor              : rgba(0, 0, 0, 0.4);
+@darkTextColor               : rgba(255, 255, 255, 0.85);
+@mutedTextColor              : rgba(255, 255, 255, 0.6);
+@lightTextColor              : rgba(255, 255, 255, 0.4);
 
-@unselectedTextColor         : rgba(0, 0, 0, 0.4);
-@hoveredTextColor            : rgba(0, 0, 0, 0.8);
-@pressedTextColor            : rgba(0, 0, 0, 0.9);
-@selectedTextColor           : rgba(0, 0, 0, 0.95);
-@disabledTextColor           : rgba(0, 0, 0, 0.2);
+@unselectedTextColor         : rgba(255, 255, 255, 0.4);
+@hoveredTextColor            : rgba(255, 255, 255, 0.8);
+@pressedTextColor            : rgba(255, 255, 255, 0.9);
+@selectedTextColor           : rgba(255, 255, 255, 0.95);
+@disabledTextColor           : rgba(255, 255, 255, 0.2);
 
-@invertedTextColor           : rgba(255, 255, 255, 0.9);
-@invertedMutedTextColor      : rgba(255, 255, 255, 0.8);
-@invertedLightTextColor      : rgba(255, 255, 255, 0.7);
-@invertedUnselectedTextColor : rgba(255, 255, 255, 0.5);
-@invertedHoveredTextColor    : rgba(255, 255, 255, 1);
-@invertedPressedTextColor    : rgba(255, 255, 255, 1);
-@invertedSelectedTextColor   : rgba(255, 255, 255, 1);
-@invertedDisabledTextColor   : rgba(255, 255, 255, 0.2);
+@invertedTextColor           : rgba(0, 0, 0, 0.9);
+@invertedMutedTextColor      : rgba(0, 0, 0, 0.8);
+@invertedLightTextColor      : rgba(0, 0, 0, 0.7);
+@invertedUnselectedTextColor : rgba(0, 0, 0, 0.5);
+@invertedHoveredTextColor    : rgba(0, 0, 0, 1);
+@invertedPressedTextColor    : rgba(0, 0, 0, 1);
+@invertedSelectedTextColor   : rgba(0, 0, 0, 1);
+@invertedDisabledTextColor   : rgba(0, 0, 0, 0.2);
 
 /*-------------------
      Brand Colors
@@ -465,22 +465,22 @@
 
 @circularRadius                : 500rem;
 
-@borderColor               : rgba(34, 36, 38, 0.15);
-@strongBorderColor         : rgba(34, 36, 38, 0.22);
-@internalBorderColor       : rgba(34, 36, 38, 0.1);
-@selectedBorderColor       : rgba(34, 36, 38, 0.35);
-@strongSelectedBorderColor : rgba(34, 36, 38, 0.5);
-@disabledBorderColor       : rgba(34, 36, 38, 0.5);
+@borderColor               : rgba(218, 220, 222, 0.2);
+@strongBorderColor         : rgba(218, 220, 222, 0.3);
+@internalBorderColor       : rgba(218, 220, 222, 0.15);
+@selectedBorderColor       : rgba(218, 220, 222, 0.4);
+@strongSelectedBorderColor : rgba(218, 220, 222, 0.5);
+@disabledBorderColor       : rgba(218, 220, 222, 0.5);
 
-@solidInternalBorderColor  : #FAFAFA;
-@solidBorderColor          : #D4D4D5;
-@solidSelectedBorderColor  : #BCBDBD;
+@solidInternalBorderColor  : mix(rgb(218, 220, 222), #333333, 15);
+@solidBorderColor          : mix(rgb(218, 220, 222), #333333, 20);
+@solidSelectedBorderColor  : mix(rgb(218, 220, 222), #333333, 40);
 
-@whiteBorderColor              : rgba(255, 255, 255, 0.1);
-@selectedWhiteBorderColor      : rgba(255, 255, 255, 0.8);
+@whiteBorderColor              : rgba(0, 0, 0, 0.15);
+@selectedWhiteBorderColor      : rgba(0, 0, 0, 0.35);
 
-@solidWhiteBorderColor         : #555555;
-@selectedSolidWhiteBorderColor : #999999;
+@solidWhiteBorderColor         : mix(rgb(0, 0, 0), #333333, 15);
+@selectedSolidWhiteBorderColor : mix(rgb(0, 0, 0), #333333, 35);
 
 
 /*-------------------
@@ -583,7 +583,7 @@
 
 /*---  Colors  ---*/
 @primaryColorHover    : saturate(darken(@primaryColor, 5), 10, relative);
-@secondaryColorHover  : saturate(lighten(@secondaryColor, 5), 10, relative);
+@secondaryColorHover  : saturate(darken(@secondaryColor, 5), 10, relative);
 
 @redHover             : saturate(darken(@red, 5), 10, relative);
 @orangeHover          : saturate(darken(@orange, 5), 10, relative);
@@ -627,7 +627,7 @@
 
 /*---  Dark Tones  ---*/
 @fullBlackHover       : lighten(@fullBlack, 5);
-@blackHover           : lighten(@black, 5);
+@blackHover           : lighten(@black, 2.5);
 @greyHover            : lighten(@grey, 5);
 
 /*---  Light Tones  ---*/
@@ -641,7 +641,7 @@
 
 /*---  Colors  ---*/
 @primaryColorFocus    : saturate(darken(@primaryColor, 8), 20, relative);
-@secondaryColorFocus  : saturate(lighten(@secondaryColor, 8), 20, relative);
+@secondaryColorFocus  : saturate(darken(@secondaryColor, 8), 20, relative);
 
 @redFocus             : saturate(darken(@red, 8), 20, relative);
 @orangeFocus          : saturate(darken(@orange, 8), 20, relative);
@@ -685,7 +685,7 @@
 
 /*---  Dark Tones  ---*/
 @fullBlackFocus       : lighten(@fullBlack, 8);
-@blackFocus           : lighten(@black, 8);
+@blackFocus           : lighten(@black, 4);
 @greyFocus            : lighten(@grey, 8);
 
 /*---  Light Tones  ---*/
@@ -700,7 +700,7 @@
 
 /*---  Colors  ---*/
 @primaryColorDown    : darken(@primaryColor, 10);
-@secondaryColorDown  : lighten(@secondaryColor, 10);
+@secondaryColorDown  : darken(@secondaryColor, 15);
 
 @redDown             : darken(@red, 10);
 @orangeDown          : darken(@orange, 10);
@@ -744,7 +744,7 @@
 
 /*---  Dark Tones  ---*/
 @fullBlackDown       : lighten(@fullBlack, 10);
-@blackDown           : lighten(@black, 10);
+@blackDown           : lighten(@black, 5);
 @greyDown            : lighten(@grey, 10);
 
 /*---  Light Tones  ---*/
@@ -759,7 +759,7 @@
 
 /*---  Colors  ---*/
 @primaryColorActive    : saturate(darken(@primaryColor, 5), 15, relative);
-@secondaryColorActive  : saturate(lighten(@secondaryColor, 5), 15, relative);
+@secondaryColorActive  : saturate(darken(@secondaryColor, 5), 15, relative);
 
 @redActive             : saturate(darken(@red, 5), 15, relative);
 @orangeActive          : saturate(darken(@orange, 5), 15, relative);
@@ -803,7 +803,7 @@
 
 /*---  Dark Tones  ---*/
 @fullBlackActive       : darken(@fullBlack, 5);
-@blackActive           : darken(@black, 5);
+@blackActive           : darken(@black, 2.5);
 @greyActive            : darken(@grey, 5);
 
 /*---  Light Tones  ---*/

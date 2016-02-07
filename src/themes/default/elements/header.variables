@@ -110,7 +110,7 @@
 @dividedIconPadding: 0em;
 
 /* Block */
-@blockBackground: @darkWhite;
+@blockBackground: @lightBlack;
 @blockBoxShadow: none;
 @blockBorderWidth: 1px;
 @blockBorder: @blockBorderWidth solid @solidBorderColor;
@@ -130,7 +130,7 @@
 @attachedBorder: 1px solid @solidBorderColor;
 @attachedVerticalPadding: @blockVerticalPadding;
 @attachedHorizontalPadding: @blockHorizontalPadding;
-@attachedBackground: @white;
+@attachedBackground: @fullBlack;
 @attachedBorderRadius: @blockBorderRadius;
 
 @tinyAttachedSize: @relativeTiny;
@@ -141,10 +141,10 @@
 @hugeAttachedSize: @relativeHuge;
 
 /* Inverted */
-@invertedColor: @white;
+@invertedColor: @fullBlack;
 @invertedSubHeaderColor: @invertedMutedTextColor;
 @invertedDividedBorderColor: @whiteBorderColor;
-@invertedBlockBackground: @lightBlack @subtleGradient;
+@invertedBlockBackground: @darkWhite @subtleGradient;
 @invertedAttachedBackground: @invertedBlockBackground;
 
 /* Floated */

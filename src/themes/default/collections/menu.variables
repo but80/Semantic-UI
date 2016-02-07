@@ -83,7 +83,7 @@
 @arrowTransition: background @defaultDuration @defaultEasing;
 @arrowZIndex: 2;
 
-@arrowHoverColor: #F2F2F2;
+@arrowHoverColor: #0E0E0E;
 @arrowActiveColor: @arrowHoverColor;
 @arrowActiveHoverColor: @arrowActiveColor;
 
@@ -158,11 +158,11 @@
 ---------------*/
 
 /* Hovered Item */
-@hoverItemBackground: @subtleTransparentBlack;
+@hoverItemBackground: @subtleTransparentWhite;
 @hoverItemTextColor: @selectedTextColor;
 
 /* Pressed Item */
-@pressedItemBackground: @subtleTransparentBlack;
+@pressedItemBackground: @subtleTransparentWhite;
 @pressedItemTextColor: @hoverItemTextColor;
 
 
@@ -182,7 +182,7 @@
 @dropdownSelectedItemColor: @selectedTextColor;
 
 /* Active Dropdown */
-@dropdownActiveItemBackground: @subtleTransparentBlack;
+@dropdownActiveItemBackground: @subtleTransparentWhite;
 @dropdownActiveItemColor: @selectedTextColor;
 @dropdownActiveItemFontWeight: bold;
 
@@ -199,7 +199,7 @@
 /* Vertical */
 @verticalBoxShadow: @boxShadow;
 @verticalPointerWidth: 2px;
-@verticalBackground: #FFFFFF;
+@verticalBackground: @fullBlack;
 @verticalItemBackground: none;
 @verticalDividerBackground: @dividerBackground;
 
@@ -301,8 +301,8 @@
 
 /* Icon */
 @iconMenuTextAlign: center;
-@iconMenuItemColor: @black;
-@iconMenuInvertedItemColor: @white;
+@iconMenuItemColor: @offWhite;
+@iconMenuInvertedItemColor: @fullBlack;
 
 
 /* Tabular */

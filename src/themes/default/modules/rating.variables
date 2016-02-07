@@ -23,7 +23,7 @@
 
 /* Standard */
 @inactiveBackground: transparent;
-@inactiveColor: rgba(0, 0, 0, 0.15);
+@inactiveColor: rgba(255, 255, 255, 0.3);
 
 @selectedBackground: @inactiveBackground;
 @selectedColor: @textColor;
@@ -37,8 +37,13 @@
 @starShadowWidth: 1px;
 
 @starInactiveBackground: @inactiveBackground;
-@starInactiveColor: @inactiveColor;
-@starInactiveTextShadow: none;
+@starInactiveColor: mix(@white, @fullBlack, 40);
+@starInactiveTextShadow:
+  0px -@starShadowWidth 0px @starInactiveColor,
+  -@starShadowWidth 0px 0px @starInactiveColor,
+  0px @starShadowWidth 0px @starInactiveColor,
+  @starShadowWidth 0px 0px @starInactiveColor
+;
 
 @starActiveBackground: @activeBackground;
 @starActiveColor: #FFE623;
@@ -66,8 +71,13 @@
 @heartShadowWidth: 1px;
 
 @heartInactiveBackground: @inactiveBackground;
-@heartInactiveColor: @inactiveColor;
-@heartInactiveTextShadow: none;
+@heartInactiveColor: mix(@white, @fullBlack, 40);
+@heartInactiveTextShadow:
+  0px -@starShadowWidth 0px @heartInactiveColor,
+  -@starShadowWidth 0px 0px @heartInactiveColor,
+  0px @starShadowWidth 0px @heartInactiveColor,
+  @starShadowWidth 0px 0px @heartInactiveColor
+;
 
 @heartActiveBackground: @activeBackground;
 @heartActiveColor: #FF6D75;

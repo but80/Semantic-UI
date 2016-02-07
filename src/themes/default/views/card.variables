@@ -13,7 +13,7 @@
 /* Card */
 @fontFamily: @pageFont;
 @display: flex;
-@background: @white;
+@background: @fullBlack;
 @borderRadius: @defaultBorderRadius;
 @margin: 1em 0em;
 @minHeight: 0px;
@@ -123,7 +123,7 @@
 @dimmerColor: '';
 
 /* Additional Content */
-@extraDivider: 1px solid rgba(0, 0, 0, 0.05);
+@extraDivider: 1px solid @internalBorderColor;
 @extraBackground: none;
 @extraPosition: static;
 @extraWidth: auto;
@@ -148,7 +148,7 @@
 --------------------*/
 
 /* Link */
-@linkHoverBackground: @white;
+@linkHoverBackground: @fullBlack;
 @linkHoverBorder: @border;
 @linkHoverZIndex: 5;
 @linkHoverRaiseDistance: 3px;
