@@ -57,3 +57,12 @@
 @compactHorizontalPadding: (@horizontalPadding * 0.5);
 
 @labeledIconBackgroundColor: transparent;
+
+@mini: 0.7rem;
+@tiny: 0.75rem;
+@small: 0.8rem;
+@medium: 0.92rem;
+@large: 1rem;
+@big: 1.125rem;
+@huge: 1.2rem;
+@massive: 1.3rem;
