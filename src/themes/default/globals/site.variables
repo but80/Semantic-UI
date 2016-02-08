@@ -6,14 +6,15 @@
        Fonts
 --------------------*/
 
-@fontName          : 'Lato';
+@fontName          : 'Roboto'; //'NotoSansCJKjp';
 @fontSmoothing     : antialiased;
+@staticFontPath    : '../themes/default/assets/fonts/@{fontName}';
 
-@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont        : @fontName, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
 
 @googleFontName    : @fontName;
-@importGoogleFonts : true;
+@importGoogleFonts : false;
 @googleFontSizes   : '400,700,400italic,700italic';
 @googleSubset      : 'latin';
 

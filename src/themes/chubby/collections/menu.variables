@@ -4,13 +4,13 @@
 
 @background: @black;
 @boxShadow: none;
-@dividerSize: 0px;
+@dividerSize: 1px;
 
 @verticalBoxShadow: 0px 0px 0px 2px @borderColor inset;
 @verticalActiveBoxShadow: none;
 
-@itemVerticalPadding: 1.25em;
-@itemHorizontalPadding: 2em;
+@itemVerticalPadding: 0.75em;
+@itemHorizontalPadding: 1.5em;
 @itemFontWeight: normal;
 
 @activeItemBackground: @primaryColor;
@@ -26,7 +26,7 @@
 @secondaryActiveHoverItemBackground: @primaryColorHover;
 @secondaryActiveHoverItemColor: @white;
 
-@secondaryPointingBorderWidth: 4px;
+@secondaryPointingBorderWidth: 2px;
 @secondaryPointingActiveBorderColor: @primaryColor;
 @secondaryPointingActiveTextColor: @primaryColor;
 

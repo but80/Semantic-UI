@@ -1,11 +1,15 @@
 ```bash
 yes '' | npm i
+git update-index --skip-worktree dist/components  # Use \ instead of / on Windows
+git update-index --skip-worktree dist/semantic.css
+git update-index --skip-worktree dist/semantic.min.css
 git reset --hard
-git update-index --skip-worktree dist/components/*
-git update-index --skip-worktree dist/semantic.*
 cd src
-ln -s theme.config.dark theme.config
+rm theme.config
+ln -s theme.config.dark theme.config  # Do "copy" instead of "ln -s" on Windows
 cd ..
 gulp build
 ```
 
+This theme includes Roboto font from Google Fonts
+licensed under [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
