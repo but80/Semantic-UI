@@ -1,8 +1,6 @@
 ```bash
 yes '' | npm i
 git update-index --skip-worktree dist/components  # Use \ instead of / on Windows
-git update-index --skip-worktree dist/semantic.css
-git update-index --skip-worktree dist/semantic.min.css
 git reset --hard
 cd src
 rm theme.config
