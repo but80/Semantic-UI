@@ -58,20 +58,20 @@
 /* Inactive Icon */
 .ui.rating .icon {
   background: transparent;
-  color: rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Active Icon */
 .ui.rating .active.icon {
   background: transparent;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* Selected Icon */
 .ui.rating .icon.selected,
 .ui.rating .icon.selected.active {
   background: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 /*-------------------
@@ -84,8 +84,8 @@
   width: 1.25em;
   height: auto;
   background: transparent;
-  color: rgba(0, 0, 0, 0.15);
-  text-shadow: none;
+  color: #666666;
+  text-shadow: 0px -1px 0px #666666, -1px 0px 0px #666666, 0px 1px 0px #666666, 1px 0px 0px #666666;
 }
 
 /* Active Star */
@@ -111,8 +111,8 @@
   width: 1.4em;
   height: auto;
   background: transparent;
-  color: rgba(0, 0, 0, 0.15);
-  text-shadow: none !important;
+  color: #666666;
+  text-shadow: 0px -1px 0px #666666, -1px 0px 0px #666666, 0px 1px 0px #666666, 1px 0px 0px #666666 !important;
 }
 
 /* Active Heart */

@@ -25,20 +25,20 @@
   min-width: -moz-min-content;
   min-width: min-content;
   z-index: 1900;
-  border: 1px solid #D4D4D5;
+  border: 0px solid #2185D0;
   line-height: 1.4285em;
   max-width: 250px;
-  background: #FFFFFF;
+  background: #2185D0;
   padding: 0.833em 1em;
   font-weight: normal;
   font-style: normal;
-  color: rgba(0, 0, 0, 0.87);
-  border-radius: 0.28571429rem;
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 0.30769em;
   box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.08);
 }
 .ui.popup > .header {
   padding: 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
   font-size: 1.125em;
   line-height: 1.2;
   font-weight: bold;
@@ -51,12 +51,11 @@
   content: '';
   width: 0.75em;
   height: 0.75em;
-  background: #FFFFFF;
+  background: #2185D0;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   z-index: 2;
-  box-shadow: 1px 1px 0px 0px #bababc;
+  box-shadow: 0px 0px 0px 0px #2185D0;
 }
 
 
@@ -79,17 +78,14 @@
 }
 .ui.top.left.popup {
   -webkit-transform-origin: left bottom;
-      -ms-transform-origin: left bottom;
           transform-origin: left bottom;
 }
 .ui.top.center.popup {
   -webkit-transform-origin: center bottom;
-      -ms-transform-origin: center bottom;
           transform-origin: center bottom;
 }
 .ui.top.right.popup {
   -webkit-transform-origin: right bottom;
-      -ms-transform-origin: right bottom;
           transform-origin: right bottom;
 }
 
@@ -97,13 +93,11 @@
 .ui.left.center.popup {
   margin: 0em 0.75em 0em 0em;
   -webkit-transform-origin: right 50%;
-      -ms-transform-origin: right 50%;
           transform-origin: right 50%;
 }
 .ui.right.center.popup {
   margin: 0em 0em 0em 0.75em;
   -webkit-transform-origin: left 50%;
-      -ms-transform-origin: left 50%;
           transform-origin: left 50%;
 }
 
@@ -113,17 +107,14 @@
 }
 .ui.bottom.left.popup {
   -webkit-transform-origin: left top;
-      -ms-transform-origin: left top;
           transform-origin: left top;
 }
 .ui.bottom.center.popup {
   -webkit-transform-origin: center top;
-      -ms-transform-origin: center top;
           transform-origin: center top;
 }
 .ui.bottom.right.popup {
   -webkit-transform-origin: right top;
-      -ms-transform-origin: right top;
           transform-origin: right top;
 }
 
@@ -140,7 +131,7 @@
   left: 50%;
   right: auto;
   bottom: auto;
-  box-shadow: -1px -1px 0px 0px #bababc;
+  box-shadow: 0px 0px 0px 0px #2185D0;
 }
 .ui.bottom.left.popup {
   margin-left: 0em;
@@ -152,7 +143,7 @@
   right: auto;
   bottom: auto;
   margin-left: 0em;
-  box-shadow: -1px -1px 0px 0px #bababc;
+  box-shadow: 0px 0px 0px 0px #2185D0;
 }
 .ui.bottom.right.popup {
   margin-right: 0em;
@@ -164,7 +155,7 @@
   bottom: auto;
   left: auto;
   margin-left: 0em;
-  box-shadow: -1px -1px 0px 0px #bababc;
+  box-shadow: 0px 0px 0px 0px #2185D0;
 }
 
 /*--- Above ---*/
@@ -208,7 +199,7 @@
   bottom: auto;
   left: auto;
   margin-top: -0.325em;
-  box-shadow: 1px -1px 0px 0px #bababc;
+  box-shadow: 0px 0px 0px 0px #2185D0;
 }
 
 /*--- Right Center  ---*/
@@ -220,31 +211,31 @@
   bottom: auto;
   right: auto;
   margin-top: -0.325em;
-  box-shadow: -1px 1px 0px 0px #bababc;
+  box-shadow: 0px 0px 0px 0px #2185D0;
 }
 
 /* Arrow Color By Location */
 .ui.bottom.popup:before {
-  background: #FFFFFF;
+  background: #2185D0;
 }
 .ui.right.center.popup:before,
 .ui.left.center.popup:before {
-  background: #FFFFFF;
+  background: #2185D0;
 }
 .ui.top.popup:before {
-  background: #FFFFFF;
+  background: #2185D0;
 }
 
 /* Inverted Arrow Color */
 .ui.inverted.bottom.popup:before {
-  background: #1B1C1D;
+  background: #000000;
 }
 .ui.inverted.right.center.popup:before,
 .ui.inverted.left.center.popup:before {
-  background: #1B1C1D;
+  background: #000000;
 }
 .ui.inverted.top.popup:before {
-  background: #1B1C1D;
+  background: #000000;
 }
 
 
@@ -327,18 +318,19 @@
 
 /* Inverted colors  */
 .ui.inverted.popup {
-  background: #1B1C1D;
-  color: #FFFFFF;
+  background: #000000;
+  color: rgba(255, 255, 255, 0.87);
   border: none;
-  box-shadow: none;
+  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.08);
 }
 .ui.inverted.popup .header {
   background-color: none;
   color: #FFFFFF;
 }
 .ui.inverted.popup:before {
-  background-color: #1B1C1D;
-  box-shadow: none !important;
+  background-color: #000000;
+  
+/* box-shadow: none !important; */
 }
 
 /*--------------

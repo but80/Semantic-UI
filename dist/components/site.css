@@ -14,7 +14,34 @@
              Page
 *******************************/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../themes/default/assets/fonts/Roboto-Regular.eot');
+  src: url('../themes/default/assets/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../themes/default/assets/fonts/Roboto-Regular.woff') format('woff'), url('../themes/default/assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../themes/default/assets/fonts/Roboto-Italic.eot');
+  src: url('../themes/default/assets/fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'), url('../themes/default/assets/fonts/Roboto-Italic.woff') format('woff'), url('../themes/default/assets/fonts/Roboto-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../themes/default/assets/fonts/Roboto-Bold.eot');
+  src: url('../themes/default/assets/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('../themes/default/assets/fonts/Roboto-Bold.woff') format('woff'), url('../themes/default/assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../themes/default/assets/fonts/Roboto-BoldItalic.eot');
+  src: url('../themes/default/assets/fonts/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../themes/default/assets/fonts/Roboto-BoldItalic.woff') format('woff'), url('../themes/default/assets/fonts/Roboto-BoldItalic.ttf') format('truetype');
+}
 html,
 body {
   height: 100%;
@@ -27,11 +54,12 @@ body {
   padding: 0px;
   overflow-x: hidden;
   min-width: 320px;
-  background: #FFFFFF;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background: #333333;
+  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
   font-smoothing: antialiased;
 }
 
@@ -45,7 +73,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   font-weight: bold;
@@ -120,32 +148,32 @@ a:hover {
 /* Site */
 ::-webkit-selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 ::-moz-selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 ::selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 textarea::-moz-selection,
 input::-moz-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 

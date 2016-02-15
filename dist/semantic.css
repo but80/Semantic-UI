@@ -13814,29 +13814,29 @@ ol.ui.horizontal.list li:before,
 /* Black Dimmer */
 
 .ui.dimmer .ui.loader {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .ui.dimmer .ui.loader:before {
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .ui.dimmer .ui.loader:after {
-  border-color: #FFFFFF transparent transparent;
+  border-color: #767676 transparent transparent;
 }
 
 /* White Dimmer (Inverted) */
 
 .ui.inverted.dimmer .ui.loader {
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .ui.inverted.dimmer .ui.loader:before {
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .ui.inverted.dimmer .ui.loader:after {
-  border-color: #767676 transparent transparent;
+  border-color: #FFFFFF transparent transparent;
 }
 
 /*******************************

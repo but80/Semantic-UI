@@ -56,10 +56,10 @@
 .ui.form .field > label {
   display: block;
   margin: 0em 0em 0.28571429rem 0em;
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 0.92857143em;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 0.8em;
   font-weight: bold;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 /*--------------------
@@ -98,18 +98,18 @@
 .ui.form input[type="time"],
 .ui.form input[type="text"],
 .ui.form input[type="url"] {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
   tap-highlight-color: rgba(255, 255, 255, 0);
   line-height: 1.2142em;
-  padding: 0.67861429em 1em;
+  padding: 1em 1.2em;
   font-size: 1em;
-  background: #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  color: rgba(0, 0, 0, 0.87);
-  border-radius: 0.28571429rem;
+  background: #000000;
+  border: 2px solid rgba(218, 220, 222, 0.2);
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 0px;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: color 0.1s ease, border-color 0.1s ease;
           transition: color 0.1s ease, border-color 0.1s ease;
@@ -121,11 +121,11 @@
   -webkit-appearance: none;
   tap-highlight-color: rgba(255, 255, 255, 0);
   padding: 0.78571429em 1em;
-  background: #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  background: #000000;
+  border: 2px solid rgba(218, 220, 222, 0.2);
   outline: none;
-  color: rgba(0, 0, 0, 0.87);
-  border-radius: 0.28571429rem;
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 0px;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: color 0.1s ease, border-color 0.1s ease;
           transition: color 0.1s ease, border-color 0.1s ease;
@@ -160,11 +160,11 @@
   height: auto;
   width: 100%;
   background: #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  border-radius: 0.28571429rem;
+  border: 2px solid rgba(218, 220, 222, 0.2);
+  border-radius: 0px;
   box-shadow: 0em 0em 0em 0em transparent inset;
   padding: 0.62em 1em;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
   -webkit-transition: color 0.1s ease, border-color 0.1s ease;
           transition: color 0.1s ease, border-color 0.1s ease;
 }
@@ -257,8 +257,8 @@
 .ui.form .field .prompt.label {
   white-space: normal;
   background: #FFFFFF !important;
-  border: 1px solid #E0B4B4 !important;
-  color: #9F3A38 !important;
+  border: 1px solid #2e1d1e !important;
+  color: #FF695E !important;
 }
 .ui.form .inline.fields .field .prompt,
 .ui.form .inline.field .prompt {
@@ -308,42 +308,42 @@
 
 /* browsers require these rules separate */
 .ui.form ::-webkit-input-placeholder {
-  color: rgba(140, 140, 140, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 .ui.form ::-ms-input-placeholder {
-  color: rgba(140, 140, 140, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 .ui.form ::-moz-placeholder {
-  color: rgba(140, 140, 140, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 .ui.form :focus::-webkit-input-placeholder {
-  color: rgba(89, 89, 89, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 .ui.form :focus::-ms-input-placeholder {
-  color: rgba(89, 89, 89, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 .ui.form :focus::-moz-placeholder {
-  color: rgba(89, 89, 89, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 /* Error Placeholder */
 .ui.form .error ::-webkit-input-placeholder {
-  color: #e7bdbc;
+  color: #ffffff;
 }
 .ui.form .error ::-ms-input-placeholder {
-  color: #e7bdbc;
+  color: #ffffff;
 }
 .ui.form .error ::-moz-placeholder {
-  color: #e7bdbc;
+  color: #ffffff;
 }
 .ui.form .error :focus::-webkit-input-placeholder {
-  color: #da9796;
+  color: #fff8f7;
 }
 .ui.form .error :focus::-ms-input-placeholder {
-  color: #da9796;
+  color: #fff8f7;
 }
 .ui.form .error :focus::-moz-placeholder {
-  color: #da9796;
+  color: #fff8f7;
 }
 
 /*--------------------
@@ -361,18 +361,18 @@
 .ui.form input[type="time"]:focus,
 .ui.form input[type="text"]:focus,
 .ui.form input[type="url"]:focus {
-  color: rgba(0, 0, 0, 0.95);
-  border-color: #85B7D9;
-  border-radius: 0.28571429rem;
-  background: #FFFFFF;
-  box-shadow: 0px 0em 0em 0em rgba(34, 36, 38, 0.35) inset;
+  color: rgba(255, 255, 255, 0.95);
+  border-color: #26587a;
+  border-radius: 0px;
+  background: #000000;
+  box-shadow: 0px 0em 0em 0em rgba(218, 220, 222, 0.4) inset;
 }
 .ui.form textarea:focus {
-  color: rgba(0, 0, 0, 0.95);
-  border-color: #85B7D9;
-  border-radius: 0.28571429rem;
-  background: #FFFFFF;
-  box-shadow: 0px 0em 0em 0em rgba(34, 36, 38, 0.35) inset;
+  color: rgba(255, 255, 255, 0.95);
+  border-color: #26587a;
+  border-radius: 0px;
+  background: #000000;
+  box-shadow: 0px 0em 0em 0em rgba(218, 220, 222, 0.4) inset;
   -webkit-appearance: none;
 }
 
@@ -429,11 +429,11 @@
 .ui.form .field.error label,
 .ui.form .fields.error .field .input,
 .ui.form .field.error .input {
-  color: #9F3A38;
+  color: #FF695E;
 }
 .ui.form .fields.error .field .corner.label,
 .ui.form .field.error .corner.label {
-  border-color: #9F3A38;
+  border-color: #FF695E;
   color: #FFFFFF;
 }
 .ui.form .fields.error .field textarea,
@@ -462,9 +462,9 @@
 .ui.form .field.error input[type="time"],
 .ui.form .field.error input[type="text"],
 .ui.form .field.error input[type="url"] {
-  background: #FFF6F6;
-  border-color: #E0B4B4;
-  color: #9F3A38;
+  background: #2e1d1e;
+  border-color: #2e1d1e;
+  color: #FF695E;
   border-radius: '';
   box-shadow: none;
 }
@@ -481,9 +481,9 @@
 .ui.form .field.error input[type="time"]:focus,
 .ui.form .field.error input[type="text"]:focus,
 .ui.form .field.error input[type="url"]:focus {
-  background: #FFF6F6;
-  border-color: #E0B4B4;
-  color: #9F3A38;
+  background: #2e1d1e;
+  border-color: #2e1d1e;
+  color: #FF695E;
   -webkit-appearance: none;
   box-shadow: none;
 }
@@ -502,25 +502,25 @@
 .ui.form .field.error .ui.dropdown,
 .ui.form .field.error .ui.dropdown .text,
 .ui.form .field.error .ui.dropdown .item {
-  background: #FFF6F6;
-  color: #9F3A38;
+  background: #2e1d1e;
+  color: #FF695E;
 }
 .ui.form .fields.error .field .ui.dropdown,
 .ui.form .field.error .ui.dropdown {
-  border-color: #E0B4B4 !important;
+  border-color: #2e1d1e !important;
 }
 .ui.form .fields.error .field .ui.dropdown:hover,
 .ui.form .field.error .ui.dropdown:hover {
-  border-color: #E0B4B4 !important;
+  border-color: #2e1d1e !important;
 }
 .ui.form .fields.error .field .ui.dropdown:hover .menu,
 .ui.form .field.error .ui.dropdown:hover .menu {
-  border-color: #E0B4B4;
+  border-color: #2e1d1e;
 }
 .ui.form .fields.error .field .ui.multiple.selection.dropdown > .label,
 .ui.form .field.error .ui.multiple.selection.dropdown > .label {
   background-color: #EACBCB;
-  color: #9F3A38;
+  color: #FF695E;
 }
 
 /* Hover */
@@ -549,20 +549,20 @@
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) label,
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) .box {
-  color: #9F3A38;
+  color: #FF695E;
 }
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) label:before,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) label:before,
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box:before,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) .box:before {
-  background: #FFF6F6;
-  border-color: #E0B4B4;
+  background: #2e1d1e;
+  border-color: #2e1d1e;
 }
 .ui.form .fields.error .field .checkbox label:after,
 .ui.form .field.error .checkbox label:after,
 .ui.form .fields.error .field .checkbox .box:after,
 .ui.form .field.error .checkbox .box:after {
-  color: #9F3A38;
+  color: #FF695E;
 }
 
 /*--------------------
@@ -695,7 +695,7 @@
 .ui.form .inverted.segment .ui.checkbox .box,
 .ui.inverted.form .ui.checkbox label,
 .ui.inverted.form .ui.checkbox .box {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 /* Inverted Field */
@@ -710,9 +710,9 @@
 .ui.inverted.form input[type="time"],
 .ui.inverted.form input[type="text"],
 .ui.inverted.form input[type="url"] {
-  background: #FFFFFF;
-  border-color: rgba(255, 255, 255, 0.1);
-  color: rgba(0, 0, 0, 0.87);
+  background: #000000;
+  border-color: rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.87);
   box-shadow: none;
 }
 
@@ -731,10 +731,10 @@
 }
 .ui.form .grouped.fields > label {
   margin: 0em 0em 0.28571429rem 0em;
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 0.92857143em;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 0.8em;
   font-weight: bold;
-  text-transform: none;
+  text-transform: uppercase;
 }
 .ui.form .grouped.fields .field,
 .ui.form .grouped.inline.fields .field {
@@ -982,10 +982,10 @@
   margin-top: 0em;
   margin-bottom: 0em;
   vertical-align: baseline;
-  font-size: 0.92857143em;
+  font-size: 0.8em;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.87);
-  text-transform: none;
+  color: rgba(255, 255, 255, 0.87);
+  text-transform: uppercase;
 }
 
 /* Grouped Inline Label */
@@ -1057,11 +1057,22 @@
   font-size: 1.42857143rem;
 }
 
+/*-------------------
+   Form Variables
+--------------------*/
 
-/*******************************
-         Theme Overrides
-*******************************/
-
+.ui.form .selection.dropdown {
+  padding: 1.1em 1.2em;
+  border-width: 2px;
+}
+.ui.form .selection.dropdown .menu {
+  min-width: calc(104%);
+  margin: 0 -2px;
+  border-width: 2px;
+}
+.ui.form .selection.dropdown input {
+  padding: inherit;
+}
 
 
 /*******************************
