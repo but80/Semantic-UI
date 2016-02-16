@@ -47,7 +47,7 @@
 @table      : 'default';
 
 /* Modules */
-@accordion  : 'chubby';
+@accordion  : 'default';
 @checkbox   : 'default';
 @dimmer     : 'default';
 @dropdown   : 'default';
