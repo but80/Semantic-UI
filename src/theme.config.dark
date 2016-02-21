@@ -26,7 +26,7 @@
 @container  : 'default';
 @divider    : 'default';
 @flag       : 'default';
-@header     : 'chubby';
+@header     : 'default';
 @icon       : 'default';
 @image      : 'default';
 @input      : 'default';
