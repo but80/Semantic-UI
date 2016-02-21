@@ -301,11 +301,11 @@
 --------------------*/
 
 /* Positive */
-@positiveColor           : @green;
-@positiveBackgroundColor : @greenBackground;
-@positiveBorderColor     : @greenBackground;
-@positiveHeaderColor     : @greenHeaderColor;
-@positiveTextColor       : @greenTextColor;
+@positiveColor           : @teal;
+@positiveBackgroundColor : @tealBackground;
+@positiveBorderColor     : @tealBackground;
+@positiveHeaderColor     : @tealHeaderColor;
+@positiveTextColor       : @tealTextColor;
 
 /* Negative */
 @negativeColor           : @red;
@@ -315,11 +315,11 @@
 @negativeTextColor       : @redTextColor;
 
 /* Info */
-@infoColor              : @blue;
-@infoBackgroundColor    : @blueBackground;
-@infoBorderColor        : @blueBackground;
-@infoHeaderColor        : @blueHeaderColor;
-@infoTextColor          : @blueTextColor;
+@infoColor              : @black;
+@infoBackgroundColor    : @pageBackground;
+@infoBorderColor        : @pageBackground;
+@infoHeaderColor        : @white;
+@infoTextColor          : @textColor;
 
 /* Warning */
 @warningColor           : @yellow;
