@@ -28,8 +28,6 @@
 @secondaryBackgroundImage: @coloredBackgroundImage;
 @secondaryTextColor: #FFFFFF - @invertedTextColor;
 
-@blue: #4A88CB;
-@teal: #00B5AD;
 @primaryColor: @teal;
 
 @borderRadius: 0em;

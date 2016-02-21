@@ -2,6 +2,8 @@
          Site Settings
 *******************************/
 
+@import "../../../../node_modules/google-material-color/dist/palette";
+
 /*-------------------
        Fonts
 --------------------*/
@@ -192,7 +194,7 @@
 @yellow           : #FBBD08;
 @olive            : #B5CC18;
 @green            : #21BA45;
-@teal             : #00B5AD;
+@teal             : @palette-Teal-500;
 @blue             : #2185D0;
 @violet           : #6435C9;
 @purple           : #A333C8;
