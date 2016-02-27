@@ -4336,7 +4336,6 @@ input::selection {
 .ui.negative.buttons .button,
 .ui.negative.button {
   background-color: #DB2828 !important;
-  color: #1B1C1D;
   text-shadow: none;
   background-image: none;
 }
@@ -4348,21 +4347,18 @@ input::selection {
 .ui.negative.buttons .button:hover,
 .ui.negative.button:hover {
   background-color: #d01919 !important;
-  color: #1B1C1D;
   text-shadow: none;
 }
 
 .ui.negative.buttons .button:focus,
 .ui.negative.button:focus {
   background-color: #ca1010 !important;
-  color: #1B1C1D;
   text-shadow: none;
 }
 
 .ui.negative.buttons .button:active,
 .ui.negative.button:active {
   background-color: #b21e1e !important;
-  color: #1B1C1D;
   text-shadow: none;
 }
 
@@ -4370,7 +4366,6 @@ input::selection {
 .ui.negative.active.button,
 .ui.negative.buttons .active.button:active {
   background-color: #d41515;
-  color: #1B1C1D;
   text-shadow: none;
 }
 
