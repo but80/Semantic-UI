@@ -160,7 +160,7 @@
   left @sliderTransitionDuration @defaultEasing
 ;
 
-@toggleLaneBackground: @transparentBlack;
+@toggleLaneBackground: rgba(0, 0, 0, 0.33);
 @toggleLaneHeight: @toggleHandleSize;
 @toggleLaneVerticalOffset: 0rem;
 @toggleOffOffset: -0.05rem;
@@ -171,7 +171,7 @@
 @toggleLabelOffset: 0.15em;
 
 
-@toggleFocusColor: @veryStrongTransparentBlack;
+@toggleFocusColor: rgba(0, 0, 0, 0.5);
 @toggleHoverColor: @toggleFocusColor;
 
 @toggleOffLabelColor: @checkboxColor;

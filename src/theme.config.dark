@@ -40,7 +40,7 @@
 
 /* Collections */
 @breadcrumb : 'default';
-@form       : 'chubby';
+@form       : 'default';
 @grid       : 'default';
 @menu       : 'chubby';
 @message    : 'default';
