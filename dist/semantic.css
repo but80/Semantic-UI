@@ -16117,9 +16117,9 @@ ol.ui.horizontal.list li:before,
   display: block;
   margin: 0em 0em 0.28571429rem 0em;
   color: rgba(255, 255, 255, 0.87);
-  font-size: 0.8em;
+  font-size: 0.92857143em;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /*--------------------
@@ -16166,10 +16166,10 @@ ol.ui.horizontal.list li:before,
   -webkit-appearance: none;
   tap-highlight-color: rgba(255, 255, 255, 0);
   line-height: 1.2142em;
-  padding: 1em 1.2em;
+  padding: 0.67861429em 1em;
   font-size: 1em;
   background: #000000;
-  border: 2px solid rgba(218, 220, 222, 0.2);
+  border: 1px solid rgba(218, 220, 222, 0.2);
   color: rgba(255, 255, 255, 0.87);
   border-radius: 0px;
   box-shadow: 0em 0em 0em 0em transparent inset;
@@ -16185,7 +16185,7 @@ ol.ui.horizontal.list li:before,
   tap-highlight-color: rgba(255, 255, 255, 0);
   padding: 0.78571429em 1em;
   background: #000000;
-  border: 2px solid rgba(218, 220, 222, 0.2);
+  border: 1px solid rgba(218, 220, 222, 0.2);
   outline: none;
   color: rgba(255, 255, 255, 0.87);
   border-radius: 0px;
@@ -16225,7 +16225,7 @@ ol.ui.horizontal.list li:before,
   height: auto;
   width: 100%;
   background: #FFFFFF;
-  border: 2px solid rgba(218, 220, 222, 0.2);
+  border: 1px solid rgba(218, 220, 222, 0.2);
   border-radius: 0px;
   box-shadow: 0em 0em 0em 0em transparent inset;
   padding: 0.62em 1em;
@@ -16844,9 +16844,9 @@ ol.ui.horizontal.list li:before,
 .ui.form .grouped.fields > label {
   margin: 0em 0em 0.28571429rem 0em;
   color: rgba(255, 255, 255, 0.87);
-  font-size: 0.8em;
+  font-size: 0.92857143em;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .ui.form .grouped.fields .field,
@@ -17132,10 +17132,10 @@ ol.ui.horizontal.list li:before,
   margin-top: 0em;
   margin-bottom: 0em;
   vertical-align: baseline;
-  font-size: 0.8em;
+  font-size: 0.92857143em;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.87);
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /* Grouped Inline Label */
@@ -17216,24 +17216,9 @@ ol.ui.horizontal.list li:before,
   font-size: 1.42857143rem;
 }
 
-/*-------------------
-   Form Variables
---------------------*/
-
-.ui.form .selection.dropdown {
-  padding: 1.1em 1.2em;
-  border-width: 2px;
-}
-
-.ui.form .selection.dropdown .menu {
-  min-width: calc(104%);
-  margin: 0 -2px;
-  border-width: 2px;
-}
-
-.ui.form .selection.dropdown input {
-  padding: inherit;
-}
+/*******************************
+         Theme Overrides
+*******************************/
 
 /*******************************
          Site Overrides
@@ -26705,7 +26690,7 @@ a.ui.card:hover,
   opacity: 1;
   width: 1.25em;
   height: 1em;
-  margin: 0em 0.5em 0em 0em;
+  margin: 0em 0.25rem 0em 0rem;
   padding: 0em;
   font-size: 1em;
   -webkit-transition: -webkit-transform 0.1s ease, opacity 0.1s ease;
@@ -26737,7 +26722,7 @@ a.ui.card:hover,
 
 .ui.accordion .ui.header .dropdown.icon {
   font-size: 1em;
-  margin: 0em 0.5em 0em 0em;
+  margin: 0em 0.25rem 0em 0rem;
 }
 
 /*******************************
@@ -26777,7 +26762,7 @@ a.ui.card:hover,
 .ui.styled.accordion .title,
 .ui.styled.accordion .accordion .title {
   margin: 0em;
-  padding: 1.25em;
+  padding: 0.75em 1em;
   color: rgba(255, 255, 255, 0.4);
   font-weight: bold;
   border-top: 1px solid rgba(218, 220, 222, 0.2);
@@ -26795,12 +26780,12 @@ a.ui.card:hover,
 .ui.styled.accordion .content,
 .ui.styled.accordion .accordion .content {
   margin: 0em;
-  padding: 1.5em 3.25em;
+  padding: 0.5em 1em 1.5em;
 }
 
 .ui.styled.accordion .accordion .content {
   padding: 0em;
-  padding: 1.5em 3.25em;
+  padding: 0.5em 1em 1.5em;
 }
 
 /* Hover */
@@ -26822,14 +26807,13 @@ a.ui.card:hover,
 /* Active */
 
 .ui.styled.accordion .active.title {
-  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  color: #009688;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .ui.styled.accordion .accordion .active.title {
   background: transparent;
-  color: #009688;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 /*******************************
@@ -26867,11 +26851,38 @@ a.ui.card:hover,
 }
 
 /*******************************
-           Overrides
+         Theme Overrides
 *******************************/
 
-.ui.styled.accordion .accordion .active.title {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+@font-face {
+  font-family: 'Accordion';
+  src: url("data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfOIKAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zryj6HgAAAFwAAAAyGhlYWT/0IhHAAACOAAAADZoaGVhApkB5wAAAnAAAAAkaG10eAJuABIAAAKUAAAAGGxvY2EAjABWAAACrAAAAA5tYXhwAAgAFgAAArwAAAAgbmFtZfC1n04AAALcAAABPHBvc3QAAwAAAAAEGAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDZ//3//wAB/+MPKwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQASAEkAtwFuABMAADc0PwE2FzYXFh0BFAcGJwYvASY1EgaABQgHBQYGBQcIBYAG2wcGfwcBAQcECf8IBAcBAQd/BgYAAAAAAQAAAEkApQFuABMAADcRNDc2MzIfARYVFA8BBiMiJyY1AAUGBwgFgAYGgAUIBwYFWwEACAUGBoAFCAcFgAYGBQcAAAABAAAAAQAAqWYls18PPPUACwIAAAAAAM/9o+4AAAAAz/2j7gAAAAAAtwFuAAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAC3AAEAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAQAAAAC3ABIAtwAAAAAAAAAKABQAHgBCAGQAAAABAAAABgAUAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADAAAAAEAAAAAAAIADgBAAAEAAAAAAAMADAAiAAEAAAAAAAQADABOAAEAAAAAAAUAFgAMAAEAAAAAAAYABgAuAAEAAAAAAAoANABaAAMAAQQJAAEADAAAAAMAAQQJAAIADgBAAAMAAQQJAAMADAAiAAMAAQQJAAQADABOAAMAAQQJAAUAFgAMAAMAAQQJAAYADAA0AAMAAQQJAAoANABaAHIAYQB0AGkAbgBnAFYAZQByAHMAaQBvAG4AIAAxAC4AMAByAGEAdABpAG4AZ3JhdGluZwByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHIAYQB0AGkAbgBnAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") format('truetype'), url("data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAASwAAoAAAAABGgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAS0AAAEtFpovuE9TLzIAAAIkAAAAYAAAAGAIIweQY21hcAAAAoQAAABMAAAATA984gpnYXNwAAAC0AAAAAgAAAAIAAAAEGhlYWQAAALYAAAANgAAADb/0IhHaGhlYQAAAxAAAAAkAAAAJAKZAedobXR4AAADNAAAABgAAAAYAm4AEm1heHAAAANMAAAABgAAAAYABlAAbmFtZQAAA1QAAAE8AAABPPC1n05wb3N0AAAEkAAAACAAAAAgAAMAAAEABAQAAQEBB3JhdGluZwABAgABADr4HAL4GwP4GAQeCgAZU/+Lix4KABlT/4uLDAeLa/iU+HQFHQAAAHkPHQAAAH4RHQAAAAkdAAABJBIABwEBBw0PERQZHnJhdGluZ3JhdGluZ3UwdTF1MjB1RjBEOXVGMERBAAACAYkABAAGAQEEBwoNVp38lA78lA78lA77lA773Z33bxWLkI2Qj44I9xT3FAWOj5CNkIuQi4+JjoePiI2Gi4YIi/uUBYuGiYeHiIiHh4mGi4aLho2Ijwj7FPcUBYeOiY+LkAgO+92L5hWL95QFi5CNkI6Oj4+PjZCLkIuQiY6HCPcU+xQFj4iNhouGi4aJh4eICPsU+xQFiIeGiYaLhouHjYePiI6Jj4uQCA74lBT4lBWLDAoAAAAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDZ//3//wAB/+MPKwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAEAADfYOJZfDzz1AAsCAAAAAADP/aPuAAAAAM/9o+4AAAAAALcBbgAAAAgAAgAAAAAAAAABAAAB4P/gAAACAAAAAAAAtwABAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAEAAAAAtwASALcAAAAAUAAABgAAAAAADgCuAAEAAAAAAAEADAAAAAEAAAAAAAIADgBAAAEAAAAAAAMADAAiAAEAAAAAAAQADABOAAEAAAAAAAUAFgAMAAEAAAAAAAYABgAuAAEAAAAAAAoANABaAAMAAQQJAAEADAAAAAMAAQQJAAIADgBAAAMAAQQJAAMADAAiAAMAAQQJAAQADABOAAMAAQQJAAUAFgAMAAMAAQQJAAYADAA0AAMAAQQJAAoANABaAHIAYQB0AGkAbgBnAFYAZQByAHMAaQBvAG4AIAAxAC4AMAByAGEAdABpAG4AZ3JhdGluZwByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHIAYQB0AGkAbgBnAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Dropdown Icon */
+
+.ui.accordion .title .dropdown.icon,
+.ui.accordion .accordion .title .dropdown.icon {
+  font-family: Accordion;
+  line-height: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+}
+
+.ui.accordion .title .dropdown.icon:before,
+.ui.accordion .accordion .title .dropdown.icon:before {
+  content: '\f0da' ;
+}
+
+.ui.accordion .accordion .title ~ .content,
+.ui.accordion .title ~ .content {
+  margin-left: 1.5em;
+  margin-right: 1em;
 }
 
 /*******************************
