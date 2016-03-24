@@ -413,7 +413,7 @@
 /* Focus */
 .ui.slider.checkbox input:focus ~ .box:before,
 .ui.slider.checkbox input:focus ~ label:before {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
 }
 
@@ -448,7 +448,7 @@
 }
 .ui.slider.checkbox input:focus:checked ~ .box:before,
 .ui.slider.checkbox input:focus:checked ~ label:before {
-  background-color: #000000 !important;
+  background-color: #141414 !important;
 }
 
 /*--------------
@@ -487,7 +487,7 @@
           transform: none;
   border: none;
   top: 0rem;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.33);
   width: 3.5rem;
   height: 1.5rem;
   border-radius: 500rem;
@@ -520,14 +520,14 @@
 /* Focus */
 .ui.toggle.checkbox input:focus ~ .box:before,
 .ui.toggle.checkbox input:focus ~ label:before {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
 }
 
 /* Hover */
 .ui.toggle.checkbox .box:hover::before,
 .ui.toggle.checkbox label:hover::before {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
 }
 
@@ -538,7 +538,7 @@
 }
 .ui.toggle.checkbox input:checked ~ .box:before,
 .ui.toggle.checkbox input:checked ~ label:before {
-  background-color: #00B5AD !important;
+  background-color: #009688 !important;
 }
 .ui.toggle.checkbox input:checked ~ .box:after,
 .ui.toggle.checkbox input:checked ~ label:after {
@@ -552,7 +552,7 @@
 }
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
 .ui.toggle.checkbox input:focus:checked ~ label:before {
-  background-color: #008c86 !important;
+  background-color: #00bfad !important;
 }
 
 

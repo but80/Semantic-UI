@@ -139,7 +139,7 @@
 
 /* Title */
 .ui.steps .step .title {
-  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
+  font-family: 'NotoSansCJKjp', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', Arial, Helvetica, sans-serif;
   font-size: 1.14285714em;
   font-weight: bold;
 }
@@ -410,7 +410,7 @@
 /* Completed */
 .ui.steps .step.completed > .icon:before,
 .ui.ordered.steps .step.completed:before {
-  color: #21BA45;
+  color: #009688;
 }
 
 /* Disabled */
@@ -422,7 +422,7 @@
 .ui.steps .disabled.step,
 .ui.steps .disabled.step .title,
 .ui.steps .disabled.step .description {
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 .ui.steps .disabled.step:after {
   background: #FFFFFF;

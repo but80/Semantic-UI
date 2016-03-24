@@ -396,7 +396,7 @@
 
 .ui.disabled.segment {
   opacity: 0.45;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 /*--------------
@@ -545,10 +545,10 @@
 
 /* Teal */
 .ui.teal.segment:not(.inverted) {
-  border-top: 2px solid #00B5AD;
+  border-top: 2px solid #009688;
 }
 .ui.inverted.teal.segment {
-  background-color: #00B5AD !important;
+  background-color: #009688 !important;
   color: #FFFFFF !important;
 }
 

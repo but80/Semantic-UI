@@ -25,10 +25,10 @@
   min-width: -moz-min-content;
   min-width: min-content;
   z-index: 1900;
-  border: 0px solid #2185D0;
+  border: 0px solid #1B1C1D;
   line-height: 1.4285em;
   max-width: 250px;
-  background: #2185D0;
+  background: #1B1C1D;
   padding: 0.833em 1em;
   font-weight: normal;
   font-style: normal;
@@ -38,7 +38,7 @@
 }
 .ui.popup > .header {
   padding: 0em;
-  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
+  font-family: 'NotoSansCJKjp', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', Arial, Helvetica, sans-serif;
   font-size: 1.125em;
   line-height: 1.2;
   font-weight: bold;
@@ -51,11 +51,11 @@
   content: '';
   width: 0.75em;
   height: 0.75em;
-  background: #2185D0;
+  background: #1B1C1D;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   z-index: 2;
-  box-shadow: 0px 0px 0px 0px #2185D0;
+  box-shadow: 0px 0px 0px 0px #1B1C1D;
 }
 
 
@@ -131,7 +131,7 @@
   left: 50%;
   right: auto;
   bottom: auto;
-  box-shadow: 0px 0px 0px 0px #2185D0;
+  box-shadow: 0px 0px 0px 0px #1B1C1D;
 }
 .ui.bottom.left.popup {
   margin-left: 0em;
@@ -143,7 +143,7 @@
   right: auto;
   bottom: auto;
   margin-left: 0em;
-  box-shadow: 0px 0px 0px 0px #2185D0;
+  box-shadow: 0px 0px 0px 0px #1B1C1D;
 }
 .ui.bottom.right.popup {
   margin-right: 0em;
@@ -155,7 +155,7 @@
   bottom: auto;
   left: auto;
   margin-left: 0em;
-  box-shadow: 0px 0px 0px 0px #2185D0;
+  box-shadow: 0px 0px 0px 0px #1B1C1D;
 }
 
 /*--- Above ---*/
@@ -199,7 +199,7 @@
   bottom: auto;
   left: auto;
   margin-top: -0.325em;
-  box-shadow: 0px 0px 0px 0px #2185D0;
+  box-shadow: 0px 0px 0px 0px #1B1C1D;
 }
 
 /*--- Right Center  ---*/
@@ -211,19 +211,19 @@
   bottom: auto;
   right: auto;
   margin-top: -0.325em;
-  box-shadow: 0px 0px 0px 0px #2185D0;
+  box-shadow: 0px 0px 0px 0px #1B1C1D;
 }
 
 /* Arrow Color By Location */
 .ui.bottom.popup:before {
-  background: #2185D0;
+  background: #1B1C1D;
 }
 .ui.right.center.popup:before,
 .ui.left.center.popup:before {
-  background: #2185D0;
+  background: #1B1C1D;
 }
 .ui.top.popup:before {
-  background: #2185D0;
+  background: #1B1C1D;
 }
 
 /* Inverted Arrow Color */

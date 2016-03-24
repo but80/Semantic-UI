@@ -115,7 +115,7 @@
 }
 .ui.search > .results .result .title {
   margin: -0.14285em 0em 0em;
-  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
+  font-family: 'NotoSansCJKjp', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
   color: rgba(255, 255, 255, 0.85);
@@ -138,7 +138,7 @@
   padding: 1em 1em;
 }
 .ui.search > .results > .message .header {
-  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
+  font-family: 'NotoSansCJKjp', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.87);
@@ -300,7 +300,7 @@
 .ui.category.search > .results .category > .name {
   width: 100px;
   background: transparent;
-  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', 'ＭＳ Ｐゴシック', Arial, Helvetica, sans-serif;
+  font-family: 'NotoSansCJKjp', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', Arial, Helvetica, sans-serif;
   font-size: 1em;
   float: 1em;
   float: left;

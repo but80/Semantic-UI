@@ -141,7 +141,7 @@
 }
 
 /* Responsive */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 320px - 1) {
   .ui.table:not(.unstackable) {
     width: 100%;
   }
@@ -286,12 +286,12 @@
 
 .ui.table tr.positive,
 .ui.table td.positive {
-  box-shadow: 0px 0px 0px #1c2c21 inset;
+  box-shadow: 0px 0px 0px #182828 inset;
 }
 .ui.table tr.positive,
 .ui.table td.positive {
-  background: #1c2c21 !important;
-  color: #2ECC40 !important;
+  background: #182828 !important;
+  color: #6DFFFF !important;
 }
 
 /*--------------
@@ -359,7 +359,7 @@
 .ui.table tr.disabled:hover,
 .ui.table tr:hover td.disabled {
   pointer-events: none;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -513,8 +513,8 @@
 .ui.selectable.table tr.positive:hover,
 .ui.table tr td.selectable.positive:hover,
 .ui.selectable.table tr:hover td.positive {
-  background: #223528 !important;
-  color: #37d249 !important;
+  background: #1e3231 !important;
+  color: #7cffff !important;
 }
 .ui.selectable.table tr.negative:hover,
 .ui.table tr td.selectable.negative:hover,
@@ -650,10 +650,10 @@
 
 /* Teal */
 .ui.teal.table {
-  border-top: 0.2em solid #00B5AD;
+  border-top: 0.2em solid #009688;
 }
 .ui.inverted.teal.table {
-  background-color: #00B5AD !important;
+  background-color: #009688 !important;
   color: #FFFFFF !important;
 }
 
@@ -883,7 +883,7 @@
 /* Hover */
 .ui.sortable.table th.disabled:hover {
   cursor: auto;
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(255, 255, 255, 0.2);
 }
 .ui.sortable.table thead th:hover {
   background: rgba(0, 0, 0, 0.05);
@@ -945,7 +945,7 @@
 .ui.inverted.table tr.disabled:hover td,
 .ui.inverted.table tr:hover td.disabled {
   pointer-events: none;
-  color: rgba(225, 225, 225, 0.3);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /* Definition */
